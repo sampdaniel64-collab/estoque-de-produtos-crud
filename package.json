@@ -1,0 +1,11 @@
+{
+  "name": "estoque-app",
+  "private": true,
+  "scripts": {
+    "instalar": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently -n api,web -c green,cyan \"npm --prefix backend start\" \"npm --prefix frontend run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
